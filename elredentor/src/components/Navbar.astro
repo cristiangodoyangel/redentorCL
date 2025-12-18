@@ -3,14 +3,18 @@
 ---
 
 <div
-    class="navbar bg-[#efe1cc] backdrop-blur-md fixed top-0 w-full h-25 z-50 border-b border-base-200 px-16"
+    class="navbar bg-[#efe1cc] backdrop-blur-md fixed top-0 w-full h-20 lg:h-24 z-50 border-b border-[#d6c7b0] px-4 lg:px-16"
 >
-    <div class="navbar-start">
+    <div class="navbar-start w-auto lg:w-1/2">
         <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden text-[#900a0a]"
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    class="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -23,22 +27,43 @@
             </div>
             <ul
                 tabindex="0"
-                class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-2 text-red-600"
+                class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow-xl bg-[#efe1cc] border border-[#d6c7b0] rounded-box w-64 gap-2 text-[#900a0a]"
             >
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#niveles">Niveles</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a href="#inicio" onclick="document.activeElement.blur()"
+                        >Inicio</a
+                    >
+                </li>
+                <li>
+                    <a href="#nosotros" onclick="document.activeElement.blur()"
+                        >Nosotros</a
+                    >
+                </li>
+                <li>
+                    <a href="#niveles" onclick="document.activeElement.blur()"
+                        >Niveles</a
+                    >
+                </li>
+                <li>
+                    <a href="#galeria" onclick="document.activeElement.blur()"
+                        >Galería</a
+                    >
+                </li>
+                <li>
+                    <a href="#contacto" onclick="document.activeElement.blur()"
+                        >Contacto</a
+                    >
+                </li>
             </ul>
         </div>
         <a
-            class="flex items-center text-xl font-bold hover:opacity-80 transition-opacity"
+            class="flex items-center text-xl font-bold hover:opacity-80 transition-opacity ml-2 lg:ml-0"
             href="/"
         >
             <img
                 src="/logo.webp"
                 alt="Logo El Redentor"
-                class="h-20 w-auto mr-2"
+                class="h-14 lg:h-20 w-auto"
             />
         </a>
     </div>
@@ -47,36 +72,46 @@
             class="menu menu-lg menu-horizontal px-1 gap-2 font-medium text-[#900a0a]"
         >
             <li>
-                <a href="#inicio" class="hover:text-white hover:bg-[#900a0a]"
+                <a
+                    href="#inicio"
+                    class="hover:text-white hover:bg-[#900a0a] rounded-lg"
                     >Inicio</a
                 >
             </li>
             <li>
-                <a href="#nosotros" class="hover:text-white hover:bg-[#900a0a]"
+                <a
+                    href="#nosotros"
+                    class="hover:text-white hover:bg-[#900a0a] rounded-lg"
                     >Nosotros</a
                 >
             </li>
             <li>
-                <a href="#niveles" class="hover:text-white hover:bg-[#900a0a]"
+                <a
+                    href="#niveles"
+                    class="hover:text-white hover:bg-[#900a0a] rounded-lg"
                     >Niveles</a
                 >
             </li>
             <li>
-                <a href="#galeria" class="hover:text-white hover:bg-[#900a0a]"
+                <a
+                    href="#galeria"
+                    class="hover:text-white hover:bg-[#900a0a] rounded-lg"
                     >Galería</a
                 >
             </li>
             <li>
-                <a href="#contacto" class="hover:text-white hover:bg-[#900a0a]"
+                <a
+                    href="#contacto"
+                    class="hover:text-white hover:bg-[#900a0a] rounded-lg"
                     >Contacto</a
                 >
             </li>
         </ul>
     </div>
-    <div class="navbar-end">
+    <div class="navbar-end flex-1 justify-end">
         <a
             href="#contacto"
-            class="btn bg-[#900a0a] text-white hover:bg-[#bf0e0e] border-none shadow-md rounded-full px-6"
+            class="btn bg-[#900a0a] text-white hover:bg-[#bf0e0e] border-none shadow-md rounded-full px-4 lg:px-6 text-sm lg:text-base min-h-[2.5rem] h-[2.5rem] lg:min-h-[3rem] lg:h-[3rem]"
         >
             Matrículas 2026
         </a>
