@@ -3,7 +3,7 @@
 ---
 
 <div
-    class="navbar bg-base-100/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-base-200"
+    class="navbar bg-[#efe1cc] backdrop-blur-md fixed top-0 w-full h-25 z-50 border-b border-base-200 px-16"
 >
     <div class="navbar-start">
         <div class="dropdown">
@@ -23,7 +23,7 @@
             </div>
             <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-2"
+                class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-2 text-red-600"
             >
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -32,33 +32,51 @@
             </ul>
         </div>
         <a
-            class="btn btn-ghost text-xl font-bold text-[#bd0e0e] hover:bg-transparent"
+            class="flex items-center text-xl font-bold hover:opacity-80 transition-opacity"
             href="/"
         >
             <img
                 src="/logo.webp"
                 alt="Logo El Redentor"
-                class="h-10 w-auto mr-2"
+                class="h-20 w-auto mr-2"
             />
-            <span class="hidden sm:inline">El Redentor</span>
         </a>
     </div>
     <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 gap-2 font-medium">
-            <li><a href="#inicio" class="hover:text-[#bd0e0e]">Inicio</a></li>
+        <ul
+            class="menu menu-lg menu-horizontal px-1 gap-2 font-medium text-[#900a0a]"
+        >
             <li>
-                <a href="#nosotros" class="hover:text-[#bd0e0e]">Nosotros</a>
+                <a href="#inicio" class="hover:text-white hover:bg-[#900a0a]"
+                    >Inicio</a
+                >
             </li>
-            <li><a href="#niveles" class="hover:text-[#bd0e0e]">Niveles</a></li>
             <li>
-                <a href="#contacto" class="hover:text-[#bd0e0e]">Contacto</a>
+                <a href="#nosotros" class="hover:text-white hover:bg-[#900a0a]"
+                    >Nosotros</a
+                >
+            </li>
+            <li>
+                <a href="#niveles" class="hover:text-white hover:bg-[#900a0a]"
+                    >Niveles</a
+                >
+            </li>
+            <li>
+                <a href="#galeria" class="hover:text-white hover:bg-[#900a0a]"
+                    >Galería</a
+                >
+            </li>
+            <li>
+                <a href="#contacto" class="hover:text-white hover:bg-[#900a0a]"
+                    >Contacto</a
+                >
             </li>
         </ul>
     </div>
     <div class="navbar-end">
         <a
             href="#contacto"
-            class="btn bg-[#bd0e0e] text-white hover:bg-[#900a0a] border-none shadow-md rounded-full px-6"
+            class="btn bg-[#900a0a] text-white hover:bg-[#bf0e0e] border-none shadow-md rounded-full px-6"
         >
             Matrículas 2026
         </a>
